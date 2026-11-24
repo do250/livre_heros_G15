@@ -3,7 +3,7 @@ def page17(gameState: dict) -> int:
 
     print("Vous reconnaissez le sommet qui était dessiné dans le carnet de votre soeur. En vous approchant un peu plus vous trouvez un des fragments du picto-mère. Une énigme se dresse devant vous.")
     
-    print("énoncé enigme")
+    print("énoncé enigme à faire")
 
     if gameState["culpabilité"] == False:
         print("indice sophie")
