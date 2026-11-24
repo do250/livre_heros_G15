@@ -12,4 +12,4 @@ def menu() -> dict:
         "inventaire": [],
     }
     print(f"Bienvenue, {nom} ! Force : {gameState['force']}, Vie : {gameState['vie']}\n")
-    return gameState
+    return gameState # test2
