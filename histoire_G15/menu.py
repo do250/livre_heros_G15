@@ -4,8 +4,7 @@ def menu() -> dict:
     nom: str = input("Quel est votre nom ? ")
     gameState: dict = {
         "nom": nom,
-        "force": 10,
-        "vie": 15,
+        "vie": 30,
         "vitesse": 10,
         "culpabilité": False,
         "vent_fort": False,

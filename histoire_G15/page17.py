@@ -10,11 +10,9 @@ def page17(gameState: dict) -> int:
 
     reponse_enigme: str = input("Donner votre réponse\n> ")
 
-    while reponse_enigme != "reponse (chiffre)":
+    while (reponse_enigme != "reponse (chiffre)") or (gameState["vie"] != 0): #on éxécute la boucle tant que la réponse n'est pas bonne ou que le joueur a encore de la vie
         if reponse_enigme != "reponse (chiffre)":
             gameState["vie"] = gameState["vie"] - 1
-            if gameState["vie"] == 0:
-                res = -1
             reponse_enigme: str = input("Donner votre réponse\n> ")
             print("Vous avez faux, ...", gameState["vie"])
         elif reponse_enigme == "reponse (chiffre)":
@@ -22,12 +20,12 @@ def page17(gameState: dict) -> int:
 
 
 
-
-    print("1 - Prendre le fragment du picto-mère et retourner à la plage")
-    choix: str = input("> ")
-
-    if choix == "1":
-        res = 13
+    if gameState["vie"] == 0: #on vérifie que à la fin de l'énigme, le joueur a encore de la vie
+        res = -1
+    elif choix == "1":
+        print("1 - Prendre le fragment du picto-mère et retourner à la plage")
+        choix: str = input("> ")
+        res = 13 #retourne à la plage
     else:
         print("Choix invalide.")
         res = 17                  # on reste sur cette page

@@ -10,7 +10,7 @@ def page8(gameState: dict) -> int:
         print("Votre vie augmente de 5. Elle est maintenant de:", gameState["vie"])
         res = 10
     elif choix == "2":
-        gameState["force"] = gameState["force"] + 5
+        gameState["vitesse"] = gameState["vitesse"] + 5
         print("Votre force augmente de 5. Elle est maintenant de:", gameState["force"])
         res = 10
     else:

@@ -9,9 +9,9 @@ def page13(gameState: dict) -> int:
     if choix == "1":
         res = 14
     elif choix == "2":
-        res = ? #1ere page foret blanche
+        res = 99 #1ere page foret blanche
     elif choix == "3":
-        res = ? #1ere page ruines ateliers
+        res = 99 #1ere page ruines ateliers
     else:
         print("Choix invalide.")
         res = 13                  # on reste sur cette page

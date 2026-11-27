@@ -21,7 +21,7 @@ def page15(gameState: dict) -> int:
     if choix == "1":
         res = 16
     elif choix == "2":
-        res = ? #page chemin long
+        res = 99 #page chemin long
     else:
         print("Choix invalide.")
         res = 15                  # on reste sur cette page
