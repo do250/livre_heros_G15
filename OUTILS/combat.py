@@ -39,10 +39,10 @@ def combat(gameState: dict, monstre: dict) -> bool:
                     res = False
         else:
             gameState["vie"] = gameState["vie"] - monstre["force"]
-                print("Le monstre vous attaque de", monstre["force"], "dégâts. Il vous reste", gameState["vie"])
-                if gameState["vie"] <= 0 :
-                    combat_fini = 1
-                    res = False
+            print("Le monstre vous attaque de", monstre["force"], "dégâts. Il vous reste", gameState["vie"])
+            if gameState["vie"] <= 0 :
+                combat_fini = 1
+                res = False
             else: 
                 monstre["vie"] = monstre["vie"] - gameState["force"]
                 print("Vous avez mis", gameState["force"], "dégâts à", monstre["nom"], ". Il lui reste", monstre["vie"])

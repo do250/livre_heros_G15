@@ -9,7 +9,7 @@ def page16(gameState: dict) -> int:
         print("Le vent soufle trop fort, la corde casse !")
         res = -1
     else:
-        print("Vous arrivez au sommet, en toute sécurité. Vous vous retrouvez face à un Névron (monstre).")
+        print("Vous poursuivez, en toute sécurité. Vous vous retrouvez face à un Névron (monstre).")
 
 
     resultat_combat: bool = combat_nevron_classique(gameState)

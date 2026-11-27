@@ -1,0 +1,4 @@
+se connecter à github sur vsc
+clone le répertoire github (copier le lien)
+aller dans source control (sur le côté à gauche)
+dans source control cliquer sur "clone"
